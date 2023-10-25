@@ -6,6 +6,10 @@ const app = express();
 
 app.use(cors());
 
+app.get("/ping", (req, res) => {
+  res.send("pong");
+});
+
 app.get("/", async (req, res) => {
   try {
     const { url } = req.query;
