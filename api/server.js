@@ -1,6 +1,6 @@
-import fetch from "node-fetch";
-import express from "express";
-import cors from "cors";
+const fetch = require("node-fetch");
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
@@ -48,4 +48,4 @@ app.listen(4000, () => {
   console.log(`API listening on port 4000 `);
 });
 
-export default app;
+module.exports = app;
